@@ -1,0 +1,129 @@
+{
+  "project_name": "COMPASS - Climate Action Routing System",
+  "theme": "light_with_dark_dashboard",
+  "archetype": "Swiss & High-Contrast (Archetype 4) mixed with Editorial Documentary",
+  "instructions_to_main_agent": [
+    "Design a highly crafted, editorial-style UI using React, HTML, and Tailwind CSS. The user is a novice running this on GitHub Pages.",
+    "IMPORTANT: Output `.js` files (NOT `.tsx`) since the user has a pure JavaScript React setup.",
+    "Do NOT use a generic startup dashboard aesthetic. Emulate premium print editorial design (e.g., Pentagram, The Pudding, NYT Opinion).",
+    "Rely heavily on typography hierarchy, sharp edges, pure CSS bento grids, and high-contrast element separation instead of soft shadows or heavy glassmorphism.",
+    "CRITICAL: All interactive and key informational elements (buttons, links, form inputs, menus, error messages, toggles) MUST include a descriptive, role-based `data-testid` attribute (e.g., `data-testid=\"select-geography-vidarbha\"`).",
+    "Ensure photo placeholder slots feel deliberately designed. If an image is missing, style the slot with a 1px border, a subtle background, and elegant monospace typography (e.g., 'IMG. 01')."
+  ],
+  "colors": {
+    "brand_primary": {
+      "white": "#ffffff",
+      "pa_yellow": "#ffa600",
+      "publishing_aqua": "#2bb6b7",
+      "consulting_blue": "#2161c2"
+    },
+    "brand_secondary": {
+      "pink": "#ed6a82",
+      "background_grey": "#f3f3f3",
+      "blue": "#1b9cfc",
+      "green": "#2ecc71",
+      "red": "#e74c3c"
+    },
+    "application_mapping": {
+      "background_light": "#f3f3f3",
+      "surface_light": "#ffffff",
+      "text_primary": "#0a1629",
+      "text_secondary": "#4a5568",
+      "border": "#d1d5db",
+      "primary_action": "#2161c2",
+      "secondary_action_hover": "#2bb6b7",
+      "warning_accent": "#ffa600",
+      "success_accent": "#2ecc71",
+      "danger_accent": "#e74c3c",
+      "dashboard_bg": "#0a1629",
+      "dashboard_surface": "#12223a",
+      "dashboard_text": "#ffffff",
+      "dashboard_border": "#1e3a63"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Cormorant Garamond, serif",
+      "body": "IBM Plex Sans, sans-serif",
+      "mono": "IBM Plex Mono, monospace"
+    },
+    "rules": {
+      "h1": "text-5xl sm:text-6xl lg:text-7xl font-serif tracking-tight leading-none text-[#0a1629]",
+      "h2": "text-3xl sm:text-4xl font-serif tracking-tight text-[#0a1629]",
+      "h3": "text-xl sm:text-2xl font-sans font-medium text-[#0a1629]",
+      "body": "text-base font-sans text-gray-800 leading-relaxed",
+      "labels": "text-xs font-mono uppercase tracking-[0.2em] text-[#2161c2]",
+      "numbers": "Use tabular-nums and IBM Plex Mono for all data points, metrics, and dates."
+    }
+  },
+  "layout_and_spacing": {
+    "strategy": "Asymmetric, publication-style layouts.",
+    "spacing_scale": "Use generous padding: p-6, p-8, p-12. Give elements breathing room to evoke high-end editorial design.",
+    "borders_and_surfaces": "Use sharp, 1px solid borders (`border-black/10` or `border-[#2bb6b7]`) to create structural divisions like newspaper columns. Avoid soft box-shadows. Use `shadow-none`.",
+    "corners": "Sharp (`rounded-none`) or extremely subtle (`rounded-sm`) to maintain editorial gravitas."
+  },
+  "screen_specific_rules": {
+    "entry": {
+      "vibe": "Immersive, authoritative introduction.",
+      "layout": "Large typographic hero section alongside a bento grid for the 3-step onboarding (Hazard, Role, Geography).",
+      "interactions": "Hover states on geography cards should reveal subtle Publishing Aqua borders."
+    },
+    "solutions": {
+      "vibe": "Premium Catalogue / Directory.",
+      "components": "Cards should have an image slot on top, tight typography below. Ensure 'first-step' CTA is prominent in Consulting Blue.",
+      "indicators": "Evidence levels must use mono font inside crisp border pills. High = Green (#2ecc71), Med = PA Yellow (#ffa600)."
+    },
+    "providers": {
+      "vibe": "Authoritative Registry.",
+      "components": "Dense, highly legible list layout. Responsiveness stars must use PA Yellow. Connect buttons (Phone/Email) aligned right."
+    },
+    "schemes": {
+      "vibe": "Structured Government Documentation.",
+      "components": "Use horizontal progress/rating bars colored with Publishing Aqua for accessibility metrics. Prominently style warnings with Red or PA Yellow left-borders."
+    },
+    "my_pathway": {
+      "vibe": "Journal / Timeline.",
+      "components": "Use a stark vertical timeline line on the left (`border-l-2 border-black/10`). Entries bulleted with Mono font timestamps. Ensure styling is high-contrast for physical printing."
+    },
+    "dashboard": {
+      "vibe": "Command Center / Deep Analytics.",
+      "theme": "Strictly Dark Theme.",
+      "components": "Background: Deep blue/black. Use vibrant accents (PA Yellow, Pink, Publishing Aqua) against dark surfaces for charts, heatmaps, and unmet need signals."
+    }
+  },
+  "components": {
+    "buttons": "Flat, zero shadow. Primary: `bg-[#2161c2] text-white hover:bg-blue-800`. Secondary: `border border-[#2161c2] text-[#2161c2] hover:bg-[#f3f3f3]`.",
+    "icons": "Use lucide-react. Keep stroke width thin (1.5 or 1.25) to align with the elegant editorial feel.",
+    "tags": "Style as document tags: `bg-white border border-gray-300 text-xs font-mono uppercase px-2 py-1`."
+  },
+  "media": {
+    "instructions": "Use these authentic documentary-style images to replace standard UI placeholders to achieve the 'National Geographic' quality requested.",
+    "image_urls": [
+      {
+        "category": "hero_vidarbha",
+        "url": "https://images.pexels.com/photos/20515274/pexels-photo-20515274.jpeg",
+        "description": "South Asian farmer with oxen in Nagpur, Maharashtra - Use for Vidarbha geography card."
+      },
+      {
+        "category": "hero_odisha",
+        "url": "https://images.pexels.com/photos/5261381/pexels-photo-5261381.jpeg",
+        "description": "Vibrant fishing village along the Odisha coastline - Use for Odisha geography card."
+      },
+      {
+        "category": "hero_ladakh",
+        "url": "https://images.pexels.com/photos/34998312/pexels-photo-34998312.jpeg",
+        "description": "Breathtaking mountains of Ladakh - Use for Ladakh geography card."
+      },
+      {
+        "category": "avatar_portrait_1",
+        "url": "https://images.unsplash.com/photo-1606203452426-f5af98e6f96e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwxfHxydXJhbCUyMGluZGlhJTIwZmFybWVyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzc2NTc4OTY0fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Portrait of a man - Use for community stories or provider avatars."
+      },
+      {
+        "category": "avatar_portrait_2",
+        "url": "https://images.unsplash.com/photo-1614025000673-edf238aaf5d4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwzfHxydXJhbCUyMGluZGlhJTIwZmFybWVyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzc2NTc4OTY0fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Portrait of a woman - Use for community stories or provider avatars."
+      }
+    ]
+  }
+}
