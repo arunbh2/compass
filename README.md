@@ -172,6 +172,7 @@ frontend/
   Edit two files and push:
   1. In `frontend/package.json`, change `"homepage": "/compass"` to `"homepage": "/your-new-name"`
   2. In `.github/workflows/deploy.yml`, change `PUBLIC_URL: /compass` to `PUBLIC_URL: /your-new-name`
+     
 
 ---
 
