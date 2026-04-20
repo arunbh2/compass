@@ -3,7 +3,7 @@ import { SOLUTIONS } from "../data/compass";
 import PhotoSlot from "./PhotoSlot";
 import { Label, EvidenceDots, Tag, SectionHead, ContextBar, Masthead } from "./Shared";
 
-const CATS = ["all", "Nature-Based", "Agroecology", "Community Protocol", "Financial Protection", "Structural", "Tech-Assisted NbS"];
+const CATS = ["all", "Watershed", "Coastal Protection", "Heat Stress", "Mountain Resilience", "Agroecology", "Early Warning", "Livelihoods", "Ecosystem", "Health"];
 
 export default function Solutions({ context, pathway, setPathway, onNavigate, onReset }) {
   const [cat, setCat] = useState("all");
